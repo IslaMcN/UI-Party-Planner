@@ -1,8 +1,10 @@
-.box-shadow-menu {
+.dropdown {
     position: relative;
     padding-left: 1.25em;
     text-decoration: none;
-  
+    position: relative;
+    display: inline-block;
+    
   :before {
     content: "";
     position: absolute;
@@ -15,4 +17,43 @@
       0 0.25em 0 0 black,
       0 0.5em 0 0 black;
   }//before end
+  .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    :hover {
+      background-color: #3e8e41;
+      :focus {
+        background-color: #2980B9;
+      }//hover focus
+    }//hover close
+  }//button end
+  nav {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    :hover{
+      display: block;
+    }// hover close
+    a{
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      :hover{
+        background-color: #ddd;
+
+      }//hover close
+  }// a close
+  }// nav close
+  .show{
+    display:block;
+
+  }
 }//menu end
