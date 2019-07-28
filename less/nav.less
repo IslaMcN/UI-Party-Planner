@@ -1,59 +1,19 @@
-.dropdown {
-    position: relative;
-    padding-left: 1.25em;
+.navbar {
+  overflow: hidden;
+  background-color: #fbc531;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  a{
+    float: left;
+    display: block;
+    color: #8c7ae6;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    position: relative;
-    display: inline-block;
-    
-  :before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.25em;
-    width: 1em;
-    height: 0.15em;
-    background: black;
-    box-shadow: 
-      0 0.25em 0 0 black,
-      0 0.5em 0 0 black;
-  }//before end
-  .dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
     :hover {
-      background-color: #3e8e41;
-      :focus {
-        background-color: #2980B9;
-      }//hover focus
-    }//hover close
-  }//button end
-  nav {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    :hover{
-      display: block;
-    }// hover close
-    a{
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      :hover{
-        background-color: #ddd;
-
-      }//hover close
-  }// a close
-  }// nav close
-  .show{
-    display:block;
-
-  }
-}//menu end
+      background: #e84118;
+      color: #dcdde1;
+    }
+  }//a close
+}// navbar close
