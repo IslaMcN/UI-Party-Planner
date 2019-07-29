@@ -3,6 +3,7 @@ body{
     background-image: linear-gradient(@bg-color1, @bg-color2);
     @media @mobile{
         margin-top:20%;
+        
     }
     header{
         h1{
@@ -12,7 +13,7 @@ body{
             .gamma();
             @media @mobile{
                 justify-content: center;
-                margin-left: 50%;
+               
             }
         }
         .socials{
@@ -29,19 +30,33 @@ body{
     .topimage {
         position: relative;
         text-align: center;
-        color: #B33771;
+        // color: #B33771;
+        @media @mobile{
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+        }
         
         h2{
             .beta();
             .gamma();
             text-shadow: @header-dec;
             @media @mobile{
-                margin-top: 22%;
+                margin-top: 35%;
+           
             }
         }
         button{
             .beta();
             margin-top: 10%;
+            @media @mobile {
+                font-size: 1rem;
+                display:flex;
+                justify-content: center;
+                align-content: center;
+                margin-top: 75%;
+                
+            }
         }
     }
     .info{
@@ -49,10 +64,19 @@ body{
         margin: 5%;
         margin-top: 10%;
         justify-content: space-between;
+        @media @mobile{
+            display: flex;
+            flex-direction: column;
+            margin-top: 100%;
+        }
         
         div {
             padding: 2%;
             width: 25%;
+            @media @mobile{
+                width: 100%;
+                
+            }
             p{ 
                 .delta();
             }

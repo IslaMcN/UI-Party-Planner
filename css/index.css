@@ -463,7 +463,7 @@ footer {
   margin: 2%;
   padding: 5%;
 }
-footer ul li {
+footer ul {
   list-style: none;
 }
 footer h3 {
@@ -509,7 +509,6 @@ body header h1 {
 @media (Max-width: 500px) {
   body header h1 {
     justify-content: center;
-    margin-left: 50%;
   }
 }
 body header .socials {
@@ -522,7 +521,13 @@ body header .socials i {
 body .topimage {
   position: relative;
   text-align: center;
-  color: #B33771;
+}
+@media (Max-width: 500px) {
+  body .topimage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 body .topimage h2 {
   position: absolute;
@@ -536,7 +541,7 @@ body .topimage h2 {
 }
 @media (Max-width: 500px) {
   body .topimage h2 {
-    margin-top: 22%;
+    margin-top: 35%;
   }
 }
 body .topimage button {
@@ -547,15 +552,36 @@ body .topimage button {
   font-size: 3rem;
   margin-top: 10%;
 }
+@media (Max-width: 500px) {
+  body .topimage button {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 75%;
+  }
+}
 body .info {
   display: flex;
   margin: 5%;
   margin-top: 10%;
   justify-content: space-between;
 }
+@media (Max-width: 500px) {
+  body .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100%;
+  }
+}
 body .info div {
   padding: 2%;
   width: 25%;
+}
+@media (Max-width: 500px) {
+  body .info div {
+    width: 100%;
+  }
 }
 body .info div p {
   font-family: 'Kalam', cursive;
