@@ -471,12 +471,36 @@ body header .socials {
 body header .socials a {
   padding: 2px 5%;
 }
-img {
-  width: 100%;
+body .topimage {
+  position: relative;
+  text-align: center;
+  color: #B33771;
 }
-.info {
+body .topimage h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+body .topimage button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  margin-top: 10%;
+}
+body .info {
   display: flex;
   margin: 5% 10%;
+}
+body .info h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+img {
+  width: 100%;
 }
 div {
   padding: 2%;
