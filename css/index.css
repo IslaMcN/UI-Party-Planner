@@ -455,6 +455,32 @@ template {
   background: #1e3799;
   color: #e55039;
 }
+footer {
+  margin: 2%;
+  padding: 5%;
+}
+footer ul li {
+  list-style: none;
+}
+footer h3 {
+  display: flex;
+  justify-content: center;
+}
+footer .socials {
+  display: flex;
+  justify-content: center;
+}
+footer .socials a {
+  padding: 2px 5%;
+}
+footer .contact {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.25rem;
+}
+footer div {
+  padding-top: 10%;
+}
 body {
   margin-top: 5%;
 }
@@ -493,15 +519,18 @@ body .topimage button {
 }
 body .info {
   display: flex;
-  margin: 5% 10%;
+  margin: 5%;
+  margin-top: 10%;
+  justify-content: space-between;
 }
-body .info h3 {
+body .info div {
+  padding: 2%;
+  width: 25%;
+}
+body .info div h3 {
   font-size: 1.5rem;
   font-style: italic;
 }
 img {
   width: 100%;
-}
-div {
-  padding: 2%;
 }
