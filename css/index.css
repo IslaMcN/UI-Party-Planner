@@ -440,6 +440,8 @@ template {
   /* Position the navbar at the top of the page */
   width: 100%;
   /* Full width */
+  display: flex;
+  justify-content: space-around;
 }
 .navbar a {
   float: left;
@@ -456,12 +458,18 @@ template {
 body {
   margin-top: 5%;
 }
-body header .facebook {
-  width: 5.5rem;
-  height: 5.5rem;
-  line-height: 5.5rem;
-  border: solid 1px #ffffff;
-  border-radius: 100%;
+body header h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 2rem;
+}
+body header .socials {
+  display: flex;
+  justify-content: center;
+}
+body header .socials a {
+  padding: 2px 5%;
 }
 img {
   width: 100%;
