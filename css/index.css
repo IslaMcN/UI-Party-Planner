@@ -443,15 +443,17 @@ template {
   display: flex;
   justify-content: space-around;
   z-index: 100000;
-  border-color: white;
+  opacity: 0.5;
 }
 .navbar a {
   float: left;
   display: block;
-  color: #0a3d62;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Kalam', cursive;
+  color: #471a1a;
+  font-style: bold;
 }
 .navbar a :hover {
   background: #1e3799;
@@ -482,23 +484,39 @@ footer .contact {
 }
 footer div {
   padding-top: 10%;
+  font-family: 'Kalam', cursive;
+  color: #471a1a;
+  font-style: bold;
 }
 body {
   margin-top: 5%;
+  background-image: linear-gradient(#FEA47F, #F97F51);
+}
+@media (Max-width: 500px) {
+  body {
+    margin-top: 20%;
+  }
 }
 body header h1 {
   display: flex;
   justify-content: center;
   align-content: center;
   font-size: 2rem;
-  color: #d37553;
   font-family: 'Pacifico', cursive;
+  color: #B33771;
+  text-shadow: 1px 2px #6D214F;
+}
+@media (Max-width: 500px) {
+  body header h1 {
+    justify-content: center;
+    margin-left: 50%;
+  }
 }
 body header .socials {
   display: flex;
   justify-content: center;
 }
-body header .socials a {
+body header .socials i {
   padding: 2px 5%;
 }
 body .topimage {
@@ -513,8 +531,13 @@ body .topimage h2 {
   transform: translate(-50%, -50%);
   font-size: 3rem;
   font-family: 'Pacifico', cursive;
-  color: #d37553;
-  text-shadow: 1px 2px #ee8965;
+  color: #B33771;
+  text-shadow: 1px 2px #6D214F;
+}
+@media (Max-width: 500px) {
+  body .topimage h2 {
+    margin-top: 22%;
+  }
 }
 body .topimage button {
   position: absolute;
@@ -534,10 +557,23 @@ body .info div {
   padding: 2%;
   width: 25%;
 }
+body .info div p {
+  font-family: 'Kalam', cursive;
+  color: #471a1a;
+  font-style: bold;
+}
 body .info div h3 {
+  font-family: 'Pacifico', cursive;
+  color: #B33771;
+  text-shadow: 1px 2px #6D214F;
   font-size: 1.5rem;
   font-style: italic;
 }
 img {
   width: 100%;
+}
+@media (Max-width: 500px) {
+  img {
+    display: none;
+  }
 }

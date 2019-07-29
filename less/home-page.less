@@ -1,16 +1,27 @@
 body{
     margin-top: 5%;
+    background-image: linear-gradient(@bg-color1, @bg-color2);
+    @media @mobile{
+        margin-top:20%;
+    }
     header{
         h1{
             .alpha();
             align-content: center;
             font-size: 2rem;
             .gamma();
+            @media @mobile{
+                justify-content: center;
+                margin-left: 50%;
+            }
         }
         .socials{
             .alpha();
-            a{
+            i{
                padding: 2px 5%;
+               @media @mobile{
+
+               }
             }
         
         }
@@ -19,10 +30,14 @@ body{
         position: relative;
         text-align: center;
         color: #B33771;
+        
         h2{
             .beta();
             .gamma();
             text-shadow: @header-dec;
+            @media @mobile{
+                margin-top: 22%;
+            }
         }
         button{
             .beta();
@@ -38,6 +53,9 @@ body{
         div {
             padding: 2%;
             width: 25%;
+            p{ 
+                .delta();
+            }
             h3{
                 .gamma();            
                 font-size: 1.5rem;
@@ -51,6 +69,9 @@ body{
 }
 img {
     width: 100%;
+    @media @mobile{
+        display: none;
+    }
 };
 
 
