@@ -475,7 +475,8 @@ footer .socials {
   justify-content: center;
 }
 footer .socials a {
-  padding: 2px 5%;
+  padding: 2% 5%;
+  text-decoration: none;
 }
 footer .contact {
   display: flex;
@@ -518,8 +519,8 @@ footer div {
   margin: 2%;
   text-decoration: none;
   color: #474787;
-  height: 5%;
-  width: 7%;
+  display: flex;
+  justify-content: center;
 }
 .Inspiration {
   display: flex;
@@ -535,13 +536,13 @@ footer div {
   border: 1px dashed #cc8e35;
   margin: 5%;
 }
-.Inspiration .img {
-  width: 100%;
-}
 @media (Max-width: 500px) {
-  .Inspiration {
+  .Inspiration div {
     width: 100%;
   }
+}
+.Inspiration .img {
+  width: 100%;
 }
 body {
   margin-top: 5%;
@@ -565,6 +566,13 @@ body header h1 {
   body header h1 {
     justify-content: center;
   }
+}
+body header h1 .logo {
+  margin: 2%;
+  text-decoration: none;
+  color: #474787;
+  height: 5%;
+  width: 7%;
 }
 body header .socials {
   display: flex;
