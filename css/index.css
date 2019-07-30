@@ -513,10 +513,13 @@ body header h1 {
 }
 body header .socials {
   display: flex;
-  justify-content: center;
 }
-body header .socials i {
-  padding: 2px 5%;
+body header .socials a {
+  margin: 2%;
+  text-decoration: none;
+  color: #474787;
+  height: 5%;
+  width: 7%;
 }
 body .topimage {
   position: relative;
@@ -544,7 +547,8 @@ body .topimage h2 {
     margin-top: 35%;
   }
 }
-body .topimage button {
+body .topimage .button {
+  text-decoration: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -558,7 +562,7 @@ body .topimage button {
   border-color: #B33771;
 }
 @media (Max-width: 500px) {
-  body .topimage button {
+  body .topimage .button {
     font-size: 1rem;
     display: flex;
     justify-content: center;
@@ -607,19 +611,4 @@ img {
   img {
     display: none;
   }
-}
-/*!
- * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
-  font-family: 'Font Awesome 5 Brands';
-  font-style: normal;
-  font-weight: normal;
-  font-display: auto;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
-}
-.fab {
-  font-family: 'Font Awesome 5 Brands';
 }
