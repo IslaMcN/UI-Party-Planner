@@ -521,26 +521,27 @@ footer div {
   height: 5%;
   width: 7%;
 }
-#inspoPage .inspiration div {
+.Inspiration {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+}
+.Inspiration div {
   padding: 2%;
   width: 25%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  border: 1px dashed #cc8e35;
+  margin: 5%;
+}
+.Inspiration .img {
+  width: 100%;
 }
 @media (Max-width: 500px) {
-  #inspoPage .inspiration div {
+  .Inspiration {
     width: 100%;
   }
-}
-#inspoPage .inspiration div .img {
-  width: 32% !important ;
-}
-#inspoPage .inspiration div p {
-  font-family: 'Kalam', cursive;
-  color: #471a1a;
-  font-style: bold;
-  width: 32%;
 }
 body {
   margin-top: 5%;
@@ -658,11 +659,11 @@ body .info div h3 {
   font-size: 1.5rem;
   font-style: italic;
 }
-img {
+.home {
   width: 100%;
 }
 @media (Max-width: 500px) {
-  img {
+  .home {
     display: none;
   }
 }
