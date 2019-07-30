@@ -646,6 +646,12 @@ body .info {
     margin-top: 100%;
   }
 }
+@media (Max-width: 800px) {
+  body .info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 body .info div {
   padding: 2%;
   width: 25%;
