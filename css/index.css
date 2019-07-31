@@ -478,6 +478,13 @@ footer .socials a {
   padding: 2% 5%;
   text-decoration: none;
 }
+@media (Max-width: 500px) {
+  footer .socials a {
+    display: flex;
+    justify-content: center;
+    padding: 1% 2% 10% 4%;
+  }
+}
 footer .contact {
   display: flex;
   justify-content: flex-start;
@@ -496,6 +503,7 @@ footer div {
 @media (Max-width: 500px) {
   #inspoPage {
     margin-top: 20%;
+    margin-right: 10%;
   }
 }
 #inspoPage header h1 {
@@ -527,6 +535,12 @@ footer div {
   flex-wrap: wrap;
   margin-left: 15%;
 }
+@media (Max-width: 800px) {
+  .Inspiration {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
 .Inspiration div {
   padding: 2%;
   width: 25%;
@@ -539,6 +553,11 @@ footer div {
 @media (Max-width: 500px) {
   .Inspiration div {
     width: 100%;
+  }
+}
+@media (Max-width: 800px) {
+  .Inspiration div {
+    width: 35%;
   }
 }
 .Inspiration .img {
@@ -565,6 +584,11 @@ body header h1 {
 @media (Max-width: 500px) {
   body header h1 {
     justify-content: center;
+  }
+}
+@media (Max-width: 800px) {
+  body header h1 {
+    margin-top: 10%;
   }
 }
 body header h1 .logo {
@@ -626,10 +650,6 @@ body .topimage .button {
 }
 @media (Max-width: 500px) {
   body .topimage .button {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
     margin-top: 75%;
   }
 }
@@ -652,6 +672,15 @@ body .info {
     flex-wrap: wrap;
   }
 }
+body .info .hero {
+  display: none;
+}
+@media (Max-width: 500px) {
+  body .info .hero {
+    width: 33%;
+    border: 5px dotted #ffb8b8;
+  }
+}
 body .info div {
   padding: 2%;
   width: 25%;
@@ -672,6 +701,11 @@ body .info div h3 {
   text-shadow: 1px 2px #6D214F;
   font-size: 1.5rem;
   font-style: italic;
+}
+@media (Max-width: 800px) {
+  body .info div h3 .long {
+    font-size: 1.25rem;
+  }
 }
 .home {
   width: 100%;

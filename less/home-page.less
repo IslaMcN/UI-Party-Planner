@@ -13,7 +13,11 @@ body{
             .gamma();
             @media @mobile{
                 justify-content: center;
+              
                
+            }
+            @media @tablet{
+                margin-top: 10%;
             }
         .logo {
             margin: 2%;
@@ -69,10 +73,6 @@ body{
             border-color: @header-color;
             
             @media @mobile {
-                font-size: 1rem;
-                display:flex;
-                justify-content: center;
-                align-content: center;
                 margin-top: 75%;
                 
             }
@@ -92,10 +92,17 @@ body{
             display:flex;
             flex-wrap:wrap;
         }
-        
+        .hero{
+            display:none;
+            @media @mobile{
+                width: 33%;
+            border: 5px dotted #ffb8b8;
+            }
+        }
         div {
             padding: 2%;
             width: 25%;
+            
             @media @mobile{
                 width: 100%;
                 
@@ -107,6 +114,11 @@ body{
                 .gamma();            
                 font-size: 1.5rem;
                 font-style: italic;
+               .long{
+                   @media @tablet{
+                       font-size: 1.25rem;
+                   }
+               }
                 
             }
         }
