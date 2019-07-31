@@ -506,42 +506,18 @@ footer div {
     margin-right: 10%;
   }
 }
-#inspoPage header h1 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  font-size: 2rem;
-  font-family: 'Pacifico', cursive;
-  color: #B33771;
-  text-shadow: 1px 2px #6D214F;
-}
-@media (Max-width: 500px) {
-  #inspoPage header h1 {
-    justify-content: center;
-  }
-}
-#inspoPage header .socials {
-  display: flex;
-}
-#inspoPage header .socials a {
-  margin: 2%;
-  text-decoration: none;
-  color: #474787;
-  display: flex;
-  justify-content: center;
-}
-.Inspiration {
+#inspoPage .Inspiration {
   display: flex;
   flex-wrap: wrap;
   margin-left: 15%;
 }
 @media (Max-width: 800px) {
-  .Inspiration {
+  #inspoPage .Inspiration {
     margin-right: 10%;
     margin-left: 10%;
   }
 }
-.Inspiration div {
+#inspoPage .Inspiration div {
   padding: 2%;
   width: 25%;
   display: flex;
@@ -551,16 +527,16 @@ footer div {
   margin: 5%;
 }
 @media (Max-width: 500px) {
-  .Inspiration div {
+  #inspoPage .Inspiration div {
     width: 100%;
   }
 }
 @media (Max-width: 800px) {
-  .Inspiration div {
+  #inspoPage .Inspiration div {
     width: 35%;
   }
 }
-.Inspiration .img {
+#inspoPage .Inspiration div .img {
   width: 100%;
 }
 body {
@@ -591,13 +567,6 @@ body header h1 {
     margin-top: 10%;
   }
 }
-body header h1 .logo {
-  margin: 2%;
-  text-decoration: none;
-  color: #474787;
-  height: 5%;
-  width: 7%;
-}
 body header .socials {
   display: flex;
 }
@@ -617,6 +586,14 @@ body .topimage {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+}
+body .topimage .home {
+  width: 100%;
+}
+@media (Max-width: 500px) {
+  body .topimage .home {
+    display: none;
   }
 }
 body .topimage h2 {
@@ -705,13 +682,5 @@ body .info div h3 {
 @media (Max-width: 800px) {
   body .info div h3 .long {
     font-size: 1.25rem;
-  }
-}
-.home {
-  width: 100%;
-}
-@media (Max-width: 500px) {
-  .home {
-    display: none;
   }
 }
