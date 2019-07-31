@@ -10,6 +10,12 @@ body{
             align-content: center;
             font-size: 2rem;
             .gamma();
+            a{
+                text-decoration: none;
+            }
+            a:active{
+                color: #7158e2;
+            }
             @media @mobile{
                 justify-content: center;
             }//media close
@@ -60,8 +66,11 @@ body{
             border-radius: 10px;
             border-color: @header-color;
             @media @mobile {
-                margin-top: 75%;
+                margin-top: 75% !important;
             }//media close
+            @media @tablet{
+                margin-top: 21%;
+            }//media close (tab)
         }//button close
     }//top image close
     .info{
@@ -79,10 +88,11 @@ body{
         }//media close (tab)
         .hero{
             display:none;
-            @media @mobile{
-                width: 33%;
-                border: 5px dotted #ffb8b8;
-            }//media close
+            @media @tablet{
+                display: block !important;
+                width: 40%;
+                border: 4px dotted #4b4b4b;
+            }
         }//hero close
         div {
             padding: 2%;

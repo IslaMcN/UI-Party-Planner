@@ -506,6 +506,15 @@ footer div {
     margin-right: 10%;
   }
 }
+#inspoPage h2 {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  font-family: 'Pacifico', cursive;
+  color: #18dcff;
+  font-size: 2.5rem;
+  text-shadow: 1px 2px #6D214F;
+}
 #inspoPage .Inspiration {
   display: flex;
   flex-wrap: wrap;
@@ -525,6 +534,11 @@ footer div {
   flex-wrap: wrap;
   border: 1px dashed #cc8e35;
   margin: 5%;
+}
+#inspoPage .Inspiration div p {
+  font-family: 'Kalam', cursive;
+  color: #471a1a;
+  font-style: bold;
 }
 @media (Max-width: 500px) {
   #inspoPage .Inspiration div {
@@ -556,6 +570,12 @@ body header h1 {
   font-family: 'Pacifico', cursive;
   color: #B33771;
   text-shadow: 1px 2px #6D214F;
+}
+body header h1 a {
+  text-decoration: none;
+}
+body header h1 a:active {
+  color: #7158e2;
 }
 @media (Max-width: 500px) {
   body header h1 {
@@ -627,7 +647,12 @@ body .topimage .button {
 }
 @media (Max-width: 500px) {
   body .topimage .button {
-    margin-top: 75%;
+    margin-top: 75% !important;
+  }
+}
+@media (Max-width: 800px) {
+  body .topimage .button {
+    margin-top: 21%;
   }
 }
 body .info {
@@ -652,10 +677,11 @@ body .info {
 body .info .hero {
   display: none;
 }
-@media (Max-width: 500px) {
+@media (Max-width: 800px) {
   body .info .hero {
-    width: 33%;
-    border: 5px dotted #ffb8b8;
+    display: block !important;
+    width: 40%;
+    border: 4px dotted #4b4b4b;
   }
 }
 body .info div {
