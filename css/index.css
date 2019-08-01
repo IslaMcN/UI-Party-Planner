@@ -249,12 +249,6 @@ sup {
 }
 /* Embedded content
      ========================================================================== */
-/**
-   * Remove the border on images inside links in IE 10.
-   */
-img {
-  border-style: none;
-}
 /* Forms
      ========================================================================== */
 /**
@@ -552,6 +546,68 @@ footer div {
 }
 #inspoPage .Inspiration div .img {
   width: 100%;
+}
+#aboutuspage {
+  margin-top: 5%;
+  background-image: linear-gradient(#d1ccc0, #27ae60);
+}
+@media (Max-width: 500px) {
+  #aboutuspage {
+    margin-top: 20%;
+    margin-right: 10%;
+  }
+}
+#aboutuspage h2 {
+  font-family: 'Pacifico', cursive;
+  color: #B33771;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 2%;
+}
+@media (Max-width: 500px) {
+  #aboutuspage h2 {
+    font-size: 2rem;
+    margin-left: 10%;
+  }
+}
+#aboutuspage .aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+@media (Max-width: 800px) {
+  #aboutuspage .aboutus {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+#aboutuspage .aboutus div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  margin: 10%;
+  text-align: center;
+}
+#aboutuspage .aboutus div :hover {
+  box-shadow: 0 4px 8px 0 #8e44ad, 0 6px 20px 0 #95a5a6;
+}
+#aboutuspage .aboutus div .peeps {
+  border-radius: 5%;
+}
+#aboutuspage .aboutus div h3 {
+  font-family: 'Pacifico', cursive;
+  color: #34495e;
+}
+#aboutuspage .aboutus div p {
+  font-family: 'Kalam', cursive;
+  color: #471a1a;
+}
+@media (Max-width: 800px) {
+  #aboutuspage .aboutus div {
+    margin-left: 20%;
+  }
 }
 body {
   margin-top: 5%;
