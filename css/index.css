@@ -426,8 +426,8 @@ template {
   display: none;
 }
 .navbar {
-  overflow: hidden;
   background-image: linear-gradient(#6a89cc, #CAD3C8);
+  overflow: hidden;
   position: fixed;
   /* Set the navbar to fixed position */
   top: 0;
@@ -448,10 +448,6 @@ template {
   font-family: 'Kalam', cursive;
   color: #471a1a;
   font-style: bold;
-}
-.navbar a :hover {
-  background: #1e3799;
-  color: #e55039;
 }
 footer {
   margin: 2%;
@@ -521,13 +517,13 @@ footer div {
   }
 }
 #inspoPage .Inspiration div {
+  margin: 5%;
   padding: 2%;
   width: 25%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   border: 1px dashed #cc8e35;
-  margin: 5%;
 }
 #inspoPage .Inspiration div p {
   font-family: 'Kalam', cursive;
@@ -560,6 +556,7 @@ footer div {
 #aboutuspage h2 {
   font-family: 'Pacifico', cursive;
   color: #B33771;
+  text-shadow: 1px 2px #6D214F;
   display: flex;
   justify-content: center;
   font-size: 3rem;
@@ -584,8 +581,8 @@ footer div {
 }
 #aboutuspage .aboutus div {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   width: 250px;
   margin: 10%;
   text-align: center;
@@ -603,6 +600,7 @@ footer div {
 #aboutuspage .aboutus div p {
   font-family: 'Kalam', cursive;
   color: #471a1a;
+  font-style: bold;
 }
 @media (Max-width: 800px) {
   #aboutuspage .aboutus div {
@@ -713,9 +711,9 @@ body .topimage .button {
 }
 body .info {
   display: flex;
+  justify-content: space-between;
   margin: 5%;
   margin-top: 10%;
-  justify-content: space-between;
 }
 @media (Max-width: 500px) {
   body .info {

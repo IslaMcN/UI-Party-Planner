@@ -17,10 +17,20 @@
 .delta(){
     font-family:@p-font;
     color:@font-color;
-   
     font-style: bold;
 }
 .epsilion(){
     display:flex;
     flex-direction: column;
+}
+.zeta(@margin,@padding){
+    margin:@margin;
+    padding:@padding;
+}
+.eta(@bg1,@bg2){
+    background-image: linear-gradient(@bg1, @bg2);
+}
+.theta(@display,@justify){
+    display:@display;
+    justify-content:@justify;
 }

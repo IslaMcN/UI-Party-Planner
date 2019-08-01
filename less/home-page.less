@@ -1,6 +1,6 @@
 body{
     margin-top: 5%;
-    background-image: linear-gradient(@bg-color1, @bg-color2);
+    .eta(@bg-color1, @bg-color2);
     @media @mobile{
         margin-top:20%;
     }//media close
@@ -51,7 +51,6 @@ body{
         h2{
             .beta();
             .gamma();
-            text-shadow: @header-dec;
             @media @mobile{
                 margin-top: 35%;
            }//media close
@@ -74,11 +73,10 @@ body{
         }//button close
     }//top image close
     .info{
-        display:flex;
+       .theta(flex,space-between);
         margin: 5%;
         margin-top: 10%;
-        justify-content: space-between;
-        @media @mobile{
+       @media @mobile{
             .epsilion();
             margin-top: 100%;
         }//media close
