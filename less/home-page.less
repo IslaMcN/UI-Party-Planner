@@ -1,0 +1,119 @@
+body{
+    margin-top: 5%;
+    .eta(@bg-color1, @bg-color2);
+    @media @mobile{
+        margin-top:20%;
+    }//media close
+    header{
+        h1{
+            .alpha();
+            align-content: center;
+            font-size: 2rem;
+            .gamma();
+            a{
+                text-decoration: none;
+            }
+            a:active{
+                color: #7158e2;
+            }
+            @media @mobile{
+                justify-content: center;
+            }//media close
+            @media @tablet{
+                margin-top: 10%;
+            }//media close (tab)
+        }// h1 close
+        .socials{
+            display: flex;
+            a{
+                margin: 2%;
+                text-decoration: none;
+                color: #474787;
+                height: 5%;
+                width: 7%;
+            }//a close
+        }//socials close
+    }// header close
+    .topimage {
+        position: relative;
+        text-align: center;
+        // color: #B33771;
+        @media @mobile{
+           .epsilion();
+            width: 100%;
+        }//media close
+        .home {
+            width: 100%;
+            @media @mobile{
+                display: none;
+            }//media close
+        }//home close 
+        h2{
+            .beta();
+            .gamma();
+            @media @mobile{
+                margin-top: 35%;
+           }//media close
+        }// h2 close
+        .button{
+            text-decoration: none;
+            .beta();
+            margin-top: 10%;
+            opacity: .9;
+            background-color:@header-color;
+            color:#F8EFBA;
+            border-radius: 10px;
+            border-color: @header-color;
+            @media @mobile {
+                margin-top: 75% !important;
+            }//media close
+            @media @tablet{
+                margin-top: 21%;
+            }//media close (tab)
+        }//button close
+    }//top image close
+    .info{
+       .theta(flex,space-between);
+        margin: 5%;
+        margin-top: 10%;
+       @media @mobile{
+            .epsilion();
+            margin-top: 100%;
+        }//media close
+        @media @tablet{
+            display:flex;
+            flex-wrap:wrap;
+        }//media close (tab)
+        .hero{
+            display:none;
+            @media @tablet{
+                display: block !important;
+                width: 40%;
+                border: 4px dotted #4b4b4b;
+            }
+        }//hero close
+        div {
+            padding: 2%;
+            width: 25%;
+            @media @mobile{
+                width: 100%;
+            }//media close
+            p{ 
+                .delta();
+            }//p close
+            h3{
+                .gamma();            
+                font-size: 1.5rem;
+                font-style: italic;
+               .long{
+                   @media @tablet{
+                       font-size: 1.25rem;
+                   }//media close (tab)
+               }//long close
+            }//h3 close
+        }//div close
+    }//info close
+}//body close
+
+
+

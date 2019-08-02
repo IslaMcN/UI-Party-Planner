@@ -1,0 +1,36 @@
+.alpha(){
+    display: flex;
+    justify-content: center;
+}
+.beta(){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.gamma(){
+   font-family: @header-font;
+    color: @header-color;
+    text-shadow: @header-dec;
+}
+.delta(){
+    font-family:@p-font;
+    color:@font-color;
+    font-style: bold;
+}
+.epsilion(){
+    display:flex;
+    flex-direction: column;
+}
+.zeta(@margin,@padding){
+    margin:@margin;
+    padding:@padding;
+}
+.eta(@bg1,@bg2){
+    background-image: linear-gradient(@bg1, @bg2);
+}
+.theta(@display,@justify){
+    display:@display;
+    justify-content:@justify;
+}
